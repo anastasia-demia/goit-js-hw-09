@@ -3,7 +3,6 @@ import { Notify } from 'notiflix';
 const form = document.querySelector('.form')
 form.addEventListener('submit', onFormSubmit);
 
-
 function onFormSubmit (e){
   e.preventDefault();
 
@@ -13,7 +12,7 @@ function onFormSubmit (e){
   amount= Number(amount.value);
 
 for (let position =1; position <= amount; position+=1){
- createPromise(position, delay)
+createPromise(position, delay)
 .then(onMakeOrderSuccess)
 .catch(onMakeOrderError)
 delay += step;}
