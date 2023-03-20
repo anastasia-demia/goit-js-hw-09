@@ -32,7 +32,6 @@ function convertMs(ms) {
 
   return { days, hours, minutes, seconds };
 }
-
 // console.log(convertMs(2000));
 // console.log(convertMs(140000));
 // console.log(convertMs(24140000));
